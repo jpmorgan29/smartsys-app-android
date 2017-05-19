@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context="com.example.jp.robot195.MainActivity">
+
+    <ImageButton
+        android:id="@+id/btnMicrophone"
+        android:layout_width="400px"
+        android:layout_height="400px"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="false"
+        android:background="@drawable/mic_icon" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnMicrophone"
+        android:layout_marginTop="14dp"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/directionkeys" />
+
+    <Button
+        android:id="@+id/btnLeft"
+        android:layout_width="250px"
+        android:layout_height="300px"
+        android:layout_alignBottom="@+id/btnRight"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_toLeftOf="@+id/btnRight"
+        android:layout_toStartOf="@+id/btnRight"
+        android:background="@android:color/transparent" />
+
+    <Button
+        android:id="@+id/btnUp"
+        android:layout_width="250px"
+        android:layout_height="200px"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:background="@android:color/transparent" />
+
+    <Button
+        android:id="@+id/btnBackwards"
+        android:layout_width="250px"
+        android:layout_height="200px"
+        android:layout_below="@+id/btnLeft"
+        android:layout_toLeftOf="@+id/btnRight"
+        android:layout_toStartOf="@+id/btnRight"
+        android:background="@android:color/transparent" />
+
+    <Button
+        android:id="@+id/btnRight"
+        android:layout_width="300px"
+        android:layout_height="250px"
+        android:layout_below="@+id/btnUp"
+        android:layout_toEndOf="@+id/btnUp"
+        android:layout_toRightOf="@+id/btnUp"
+        android:background="@android:color/transparent" />
+
+    <TextView
+        android:id="@+id/tvSaid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Said Sentence"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="100sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvSaid"
+        android:layout_marginTop="51dp"
+        android:rotation="270"
+        android:text="Status:"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvlatest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSaid"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp" />
+
+</RelativeLayout>
